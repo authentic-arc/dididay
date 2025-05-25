@@ -66,7 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Open Envelope Animation
+let messageRevealed = false;
+
 function openEnvelope(id) {
+    messageRevealed = false;  // reset on every new envelope open
     currentEnvelope = id;
     const revealedPic = document.getElementById("revealed-pic");
     revealedPic.classList.add("glow-hint");
@@ -92,6 +95,9 @@ function openEnvelope(id) {
 
 // Show Message Animation
 function showMessage() {
+    if (messageRevealed) return;  // Prevent repeated showing
+    messageRevealed = true;
+    
     anime({
         targets: "#message",
         opacity: [0, 1],
