@@ -16,7 +16,11 @@ const titles = {
 
 // Messages per envelope (Modify this section for custom messages)
 const messages = {
-    1: "You're amazing! ❤️",
+    1: `Happiest Birthday babessss 💖 
+    I'm missing you loadsss, being here is no fun without you. 
+    I want to go out on nightly bobba runs with you and have gossip sessions 🫶🏼 also our future trip is what is keeping me going atp, so come soon 😘
+    This pic may not be our best but this day will forever be a core memory for me ❤ 
+    Love you loads 😙 ❤️`,
     2: "I cherish every moment with you 💕",
     3: "Hey buddhi <br>Here’s everything from the dil<br>I’m so proud of everything you’ve done and keep doing <br>I wish I so wish there was something more I could do and I think about it everyday <br>You’re one of the closest only real people in my world <br>I love you loads bro I hope you have an amazing amazing day <br>I can’t wait to see you again this summers <br>Love G❤",
     4: "Every day with you is a blessing! 😘",
