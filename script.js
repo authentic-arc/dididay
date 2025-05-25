@@ -9,7 +9,7 @@ const titles = {
     5: "Prakul",
     6: "Guchum",
     7: "Manasha",
-    8: "Sweet Memories 🍰",
+    8: "Shanthi",
     9: "You & Me 💖",
     10: "Here's to Us! 🥂"
 };
@@ -46,7 +46,7 @@ const messages = {
     7: `Forever grateful to have you as my best friend. Love you more than words could ever describe♥️♥️
         You’re so sassy and sometimes annoying but I love you
         the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️`,
-    8: "I'd choose you a thousand times over! 💕",
+    8: "Hiii Arohi, happy happy 22nd🫶 I love you so so much and I’ll miss you immensely after we graduate, but please know that I’m so grateful to have you in my life and call you my best friend. I hope you find all the joy and fulfillment that you seek in life🥰 wanna get our favorite yogurt and take a stroll on campus and yap?🤪",
     9: "You are my everything! 💘",
     10: "Happy 22! Here's to more adventures together! 🎉"
 };
