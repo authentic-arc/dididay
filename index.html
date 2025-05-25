@@ -19,7 +19,21 @@
         <div id="click-hint" class="click-hint">Click the photo to reveal the message ✨</div>
 
         <div id="title"></div> <!-- Title dynamically set in JS -->
-        <img id="revealed-pic" src="" onclick="showMessage()">
+        <img
+            id="revealed-pic"
+            src=""
+            onclick="showMessage()"
+
+        />
+
+        <video
+            id="center-video"
+            controls;"
+        >
+            <source src="video/hbdidi.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
         <div id="message"></div> <!-- Message dynamically set in JS -->
         <button onclick="goBack()">Back</button>
     </div>
