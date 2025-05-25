@@ -2,13 +2,13 @@ let currentEnvelope = 0;
 
 // Titles per envelope
 const titles = {
-    1: "A Special Moment ❤️",
-    2: "Our Fun Adventure! 🌍",
-    3: "Laughs & Love 💕",
-    4: "Best Day Ever! 🎉",
-    5: "Forever My Favorite 😘",
-    6: "Sunsets & Smiles 🌅",
-    7: "Unforgettable Journey ✨",
+    1: "Vanshita",
+    2: "Priyanka",
+    3: "Atmik",
+    4: "Dia",
+    5: "Prakul",
+    6: "Guchum",
+    7: "Manasha",
     8: "Sweet Memories 🍰",
     9: "You & Me 💖",
     10: "Here's to Us! 🥂"
@@ -21,12 +21,31 @@ const messages = {
     I want to go out on nightly bobba runs with you and have gossip sessions 🫶🏼 also our future trip is what is keeping me going atp, so come soon 😘
     This pic may not be our best but this day will forever be a core memory for me ❤ 
     Love you loads 😙 ❤️`,
-    2: "I cherish every moment with you 💕",
-    3: "Hey buddhi <br>Here’s everything from the dil<br>I’m so proud of everything you’ve done and keep doing <br>I wish I so wish there was something more I could do and I think about it everyday <br>You’re one of the closest only real people in my world <br>I love you loads bro I hope you have an amazing amazing day <br>I can’t wait to see you again this summers <br>Love G❤",
-    4: "Every day with you is a blessing! 😘",
-    5: "I love you more than words can say! 💖",
-    6: "Forever grateful for you in my life! ✨",
-    7: "You make my world brighter! 🌞",
+    2: `HAPPY BIRTHDAY, BEAUTIFUL!🤍✨
+        All the way from this side of the planet, I’m sending you a giant hug, a virtual cake, and way too much love.
+        We’ve known each other since school, and yet somehow, you still haven’t gotten tired of me—truly, you're the most patient soul alive.
+        Even with oceans and time zones between us, you’ve always had my back, and I hope you know I’ve always got yours.
+        I know studying in the US isn’t always easy (I see you, late-night breakdowns and caffeine-fueled essays), but you’re doing amazing, even when you don’t feel like it.
+        I miss your face, your laugh, your weird jokes that only make sense to us (and maybe scare others).
+        So today, eat cake, dance badly, cry a little if you want (emotions are valid!), and remember: I love you loads, I’m proud of you always, and I’m just a message away—no matter how far.
+        Here’s to more years of friendship, terrible memes, and embarrassing voice notes.
+        
+        Love you endlessly ❤️
+        Priyanka`,
+    3: `Happy 22nd bday Arohi! Thank you for being such an amazing and genuine friend! Here’s to many more memories including the late night study sesh’s, starbies runs and spending Rakhi’s together 😁`,
+    4: "Happy 22nd Birthday Arohi!!! i’m so happy and grateful to have met you and spent the 4 years of college calling you a friend. I hope we always stay like this and yap about life and drama and our expert opinions on others people’s drama specifically😂😂i love you and i hope you have the best birthday🫶🫶",
+    5: "A very happy bday Arohi!! 🍻 Dude, can you believe it?! 12 yrs! We've been friends for 12 yrs yaar!! Omg! Thank you for sticking with me all this time, inspite of... well, my lack of responses. I know I have said this before, but to me, you are one of the most wonderful and amazing people out there. Hoping I'll be there for more highs and lows that are to come in whatever your future holds. Have a good one 👍🥳",
+    6: `Hey buddhi 
+        Here’s everything from the dil 
+        I’m so proud of everything you’ve done and keep doing 
+        I wish I so wish there was something more I could do and I think about it everyday 
+        You’re one of the closest only real people in my world
+        I love you loads bro I hope you have an amazing amazing day 
+        I can’t wait to see you again this summers 
+        Love G❤`,
+    7: `Forever grateful to have you as my best friend. Love you more than words could ever describe♥️♥️
+        You’re so sassy and sometimes annoying but I love you
+        the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️`,
     8: "I'd choose you a thousand times over! 💕",
     9: "You are my everything! 💘",
     10: "Happy 22! Here's to more adventures together! 🎉"
