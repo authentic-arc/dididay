@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+</head>
+<body>
+
+    <div id="envelopes-screen">
+        <div id="center-text">I don't know about you, but I'm feeling 22</div>
+        <div id="envelopes-container"></div>
+    </div>
+
+    <div id="content-screen" style="display: none;">
+        <!-- Put this below the revealed image in the HTML -->
+        <div id="click-hint" class="click-hint">Click the photo to reveal the message ✨</div>
+
+        <div id="title"></div> <!-- Title dynamically set in JS -->
+        <img id="revealed-pic" src="" onclick="showMessage()">
+        <div id="message"></div> <!-- Message dynamically set in JS -->
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <canvas class="fireworks"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
