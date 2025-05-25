@@ -10,8 +10,9 @@ const titles = {
     6: "Guchum",
     7: "Manasha",
     8: "Shanthi",
-    9: "You & Me 💖",
-    10: "Here's to Us! 🥂"
+    9: "TBD",
+    10: "Tea Bee Di",
+    11: "gubs"
 };
 
 // Messages per envelope (Modify this section for custom messages)
@@ -48,12 +49,13 @@ const messages = {
         the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️`,
     8: "Hiii Arohi, happy happy 22nd🫶 I love you so so much and I’ll miss you immensely after we graduate, but please know that I’m so grateful to have you in my life and call you my best friend. I hope you find all the joy and fulfillment that you seek in life🥰 wanna get our favorite yogurt and take a stroll on campus and yap?🤪",
     9: "You are my everything! 💘",
-    10: "Happy 22! Here's to more adventures together! 🎉"
+    10: "Happy 22! Here's to more adventures together! 🎉",
+    11: ""
 };
 
 
 
-// Generate 10 envelopes dynamically
+// Generate 10 envelopes and 1 vid
 document.addEventListener("DOMContentLoaded", () => {
     let envelopeContainer = document.getElementById("envelopes-container");
 
@@ -63,19 +65,32 @@ document.addEventListener("DOMContentLoaded", () => {
         envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope${i}" onclick="openEnvelope(${i})">`;
         envelopeContainer.appendChild(envelopeDiv);
     }
+
+    // Add the 11th envelope (video)
+    const envelopeDiv = document.createElement("div");
+    envelopeDiv.classList.add("envelope");
+    envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope11" onclick="openEnvelope(11)" />`;
+    envelopeContainer.appendChild(envelopeDiv);
+    
 });
 
-// Open Envelope Animation
-let messageRevealed = false;
 
+// Open Envelope Animation
 function openEnvelope(id) {
-    messageRevealed = false;  // reset on every new envelope open
     currentEnvelope = id;
     const revealedPic = document.getElementById("revealed-pic");
-    revealedPic.classList.add("glow-hint");
+    const video = document.getElementById("center-video");
+    const message = document.getElementById("message");
+    const clickHint = document.getElementById("click-hint");
 
-    // Add a tooltip or temporary label
+    // Reset display states before animation
+    revealedPic.classList.add("glow-hint");
     revealedPic.title = "Click me to reveal the message!";
+    revealedPic.style.display = "none";
+    video.style.display = "none";
+    video.pause();
+    message.style.display = "none";
+    clickHint.style.display = "none";
 
     anime({
         targets: `#envelope${id}`,
@@ -85,9 +100,23 @@ function openEnvelope(id) {
         complete: function () {
             document.getElementById("envelopes-screen").style.display = "none";
             document.getElementById("content-screen").style.display = "flex";
-            document.getElementById("revealed-pic").src = `images/pic${id}.jpg`;
-            document.getElementById("title").innerText = titles[id] || "A Beautiful Memory ✨"
-            document.getElementById("message").innerText = messages[id]; // Set the correct message
+            document.getElementById("title").innerText = titles[id] || "A Beautiful Memory ✨";
+
+            if (id === 11) {
+                // Show video instead of image/message
+                video.style.display = "block";
+                video.currentTime = 0;
+                video.play();
+                clickHint.style.display = "none";
+                message.style.display = "none";
+            } else {
+                // Show image and message for envelopes 1-10
+                revealedPic.src = `images/pic${id}.jpg`;
+                revealedPic.style.display = "block";
+                clickHint.style.display = "block";
+                message.innerText = messages[id] || "";
+                message.style.display = "none";
+            }
             new Audio('sounds/envelope-open.mp3').play();
         }
     });
@@ -115,6 +144,13 @@ function goBack() {
     document.getElementById("content-screen").style.display = "none";
     document.getElementById("envelopes-screen").style.display = "flex";
 
+    // Reset video if open
+    const video = document.getElementById("center-video");
+    if (!video.paused) {
+        video.pause();
+        video.currentTime = 0;
+    }
+
     anime({
         targets: `#envelope${currentEnvelope}`,
         scale: [2, 1],
@@ -122,7 +158,6 @@ function goBack() {
         easing: "easeOutExpo"
     });
 }
-
 // 🌟 Fireworks Effect (Clicking Outside Envelopes)
 var canvasEl = document.querySelector('.fireworks');
 var ctx = canvasEl.getContext('2d');
