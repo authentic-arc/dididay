@@ -10,9 +10,11 @@ const titles = {
     6: "Guchum",
     7: "Manasha",
     8: "Shanthi",
-    9: "TBD",
-    10: "Tea Bee Di",
-    11: "gubs"
+    9: "black guy between manasha and didi",
+    10: "lowkey looks like riddhi",
+    11: "blue sunglasses",
+    12: "beach crochet top girl",
+    13: "gubs"
 };
 
 // Messages per envelope (Modify this section for custom messages)
@@ -44,13 +46,13 @@ const messages = {
         I love you loads bro I hope you have an amazing amazing day 
         I can’t wait to see you again this summers 
         Love G❤`,
-    7: `Forever grateful to have you as my best friend. Love you more than words could ever describe♥️♥️
-        You’re so sassy and sometimes annoying but I love you
-        the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️`,
+    7: `Forever grateful to have you as my best friend. Love you more than words could ever describe♥️♥️`,
     8: "Hiii Arohi, happy happy 22nd🫶 I love you so so much and I’ll miss you immensely after we graduate, but please know that I’m so grateful to have you in my life and call you my best friend. I hope you find all the joy and fulfillment that you seek in life🥰 wanna get our favorite yogurt and take a stroll on campus and yap?🤪",
     9: "You are my everything! 💘",
     10: "Happy 22! Here's to more adventures together! 🎉",
-    11: ""
+    11: "You’re so sassy and sometimes annoying but I love you",
+    12: "the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️",
+    13: ""
 };
 
 
@@ -59,17 +61,17 @@ const messages = {
 document.addEventListener("DOMContentLoaded", () => {
     let envelopeContainer = document.getElementById("envelopes-container");
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 12; i++) {
         let envelopeDiv = document.createElement("div");
         envelopeDiv.classList.add("envelope");
         envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope${i}" onclick="openEnvelope(${i})">`;
         envelopeContainer.appendChild(envelopeDiv);
     }
 
-    // Add the 11th envelope (video)
+    // Add the 13th envelope (video)
     const envelopeDiv = document.createElement("div");
     envelopeDiv.classList.add("envelope");
-    envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope11" onclick="openEnvelope(11)" />`;
+    envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope13" onclick="openEnvelope(13)" />`;
     envelopeContainer.appendChild(envelopeDiv);
     
 });
@@ -102,7 +104,7 @@ function openEnvelope(id) {
             document.getElementById("content-screen").style.display = "flex";
             document.getElementById("title").innerText = titles[id] || "A Beautiful Memory ✨";
 
-            if (id === 11) {
+            if (id === 13) {
                 // Show video instead of image/message
                 video.style.display = "block";
                 video.currentTime = 0;
