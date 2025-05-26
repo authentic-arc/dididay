@@ -1,5 +1,5 @@
 let currentEnvelope = 0;
-
+let messageRevealed = false;
 // Titles per envelope
 const titles = {
     1: "Vanshita",
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Open Envelope Animation
 function openEnvelope(id) {
     currentEnvelope = id;
+    messageRevealed = false;
     const revealedPic = document.getElementById("revealed-pic");
     const video = document.getElementById("center-video");
     const message = document.getElementById("message");
@@ -118,6 +119,7 @@ function openEnvelope(id) {
                 clickHint.style.display = "block";
                 message.innerText = messages[id] || "";
                 message.style.display = "none";
+                revealedPic.onclick = showMessage;
             }
             new Audio('sounds/envelope-open.mp3').play();
         }
