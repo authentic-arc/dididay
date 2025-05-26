@@ -14,7 +14,7 @@ const titles = {
     10: "Divyanshi",
     11: "Alice",
     12: "Juhi",
-    13: "Oindrila"
+    13: "Oindrila",
     14: "",
     15: ""
 };
