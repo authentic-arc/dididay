@@ -10,10 +10,10 @@ const titles = {
     6: "Guchum",
     7: "Manasha",
     8: "Shanthi",
-    9: "black guy between manasha and didi",
-    10: "lowkey looks like riddhi",
-    11: "blue sunglasses",
-    12: "beach crochet top girl",
+    9: "Raj",
+    10: "Divyanshi",
+    11: "Alice",
+    12: "Juhi",
     13: "gubs"
 };
 
@@ -48,11 +48,11 @@ const messages = {
         Love G❤`,
     7: `Forever grateful to have you as my best friend. Love you more than words could ever describe♥️♥️`,
     8: "Hiii Arohi, happy happy 22nd🫶 I love you so so much and I’ll miss you immensely after we graduate, but please know that I’m so grateful to have you in my life and call you my best friend. I hope you find all the joy and fulfillment that you seek in life🥰 wanna get our favorite yogurt and take a stroll on campus and yap?🤪",
-    9: "You are my everything! 💘",
-    10: "Happy 22! Here's to more adventures together! 🎉",
-    11: "You’re so sassy and sometimes annoying but I love you",
-    12: "the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️",
-    13: ""
+    9: "You’re so sassy and sometimes annoying but I love you",
+    10: "the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️",
+    11: "I will always have the fondest memories of us letting go of our exterior worries for a few hours, touching grass and enjoying the simplest of pleasures!"
+    12: "My fav person to go to the beach with even when the beach hates us. Love you 💛!"
+    13: "gubs"
 };
 
 
