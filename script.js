@@ -60,7 +60,7 @@ const messages = {
     11: "I will always have the fondest memories of us letting go of our exterior worries for a few hours, touching grass and enjoying the simplest of pleasures!",
     12: "My fav person to go to the beach with even when the beach hates us. Love you 💛!",
     13: "Happy birthdayyy Arohi!! Apologies for the crazy picture lol. Have the best one❤️so glad we mettt🫶🏻",
-    14: "",
+    14: "Happy b-day Arohi!!! Love you and we have to start traveling together to taste more tiramisus!",
     15: ""
 };
 
