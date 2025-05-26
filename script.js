@@ -71,7 +71,7 @@ const messages = {
 document.addEventListener("DOMContentLoaded", () => {
     let envelopeContainer = document.getElementById("envelopes-container");
 
-    for (let i = 1; i <= 15; i++) {
+    for (let i = 1; i <= 14; i++) {
         let envelopeDiv = document.createElement("div");
         envelopeDiv.classList.add("envelope");
         envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope${i}" onclick="openEnvelope(${i})">`;
