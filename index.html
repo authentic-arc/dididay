@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Happy Birthday Arohi</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 </head>
 <body>
@@ -15,26 +15,22 @@
     </div>
 
     <div id="content-screen" style="display: none;">
-        <!-- Put this below the revealed image in the HTML -->
         <div id="click-hint" class="click-hint">Click the photo to reveal the message ✨</div>
 
-        <div id="title"></div> <!-- Title dynamically set in JS -->
+        <div id="title"></div>
+
         <img
             id="revealed-pic"
             src=""
             onclick="showMessage()"
-
         />
 
-        <video
-            id="center-video"
-            controls;"
-        >
+        <video id="center-video" controls style="display: none; max-width: 100%;">
             <source src="video/hbdidi.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
 
-        <div id="message"></div> <!-- Message dynamically set in JS -->
+        <div id="message"></div>
         <button onclick="goBack()">Back</button>
     </div>
 
