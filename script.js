@@ -14,7 +14,9 @@ const titles = {
     10: "Divyanshi",
     11: "Alice",
     12: "Juhi",
-    13: "gubs"
+    13: "Oindrila"
+    14: ""
+    15: ""
 };
 
 // Messages per envelope (Modify this section for custom messages)
@@ -52,8 +54,11 @@ const messages = {
     10: "the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️",
     11: "I will always have the fondest memories of us letting go of our exterior worries for a few hours, touching grass and enjoying the simplest of pleasures!"
     12: "My fav person to go to the beach with even when the beach hates us. Love you 💛!"
-    13: "gubs"
+    13: "Happy birthdayyy Arohi!! Apologies for the crazy picture lol. Have the best one❤️so glad we mettt🫶🏻"
+    14: ""
+    15: ""
 };
+
 
 
 
@@ -61,17 +66,17 @@ const messages = {
 document.addEventListener("DOMContentLoaded", () => {
     let envelopeContainer = document.getElementById("envelopes-container");
 
-    for (let i = 1; i <= 12; i++) {
+    for (let i = 1; i <= 15; i++) {
         let envelopeDiv = document.createElement("div");
         envelopeDiv.classList.add("envelope");
         envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope${i}" onclick="openEnvelope(${i})">`;
         envelopeContainer.appendChild(envelopeDiv);
     }
 
-    // Add the 13th envelope (video)
+    // Add the 15th envelope (video)
     const envelopeDiv = document.createElement("div");
     envelopeDiv.classList.add("envelope");
-    envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope13" onclick="openEnvelope(13)" />`;
+    envelopeDiv.innerHTML = `<img src="images/envelope1.png" id="envelope15" onclick="openEnvelope(15)" />`;
     envelopeContainer.appendChild(envelopeDiv);
     
 });
@@ -105,7 +110,7 @@ function openEnvelope(id) {
             document.getElementById("content-screen").style.display = "flex";
             document.getElementById("title").innerText = titles[id] || "A Beautiful Memory ✨";
 
-            if (id === 13) {
+            if (id === 15) {
                 // Show video instead of image/message
                 video.style.display = "block";
                 video.currentTime = 0;
