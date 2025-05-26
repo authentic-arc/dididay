@@ -15,7 +15,7 @@ const titles = {
     11: "Alice",
     12: "Juhi",
     13: "Oindrila"
-    14: ""
+    14: "",
     15: ""
 };
 
@@ -38,8 +38,11 @@ const messages = {
         Love you endlessly ❤️
         Priyanka`,
     3: `Happy 22nd bday Arohi! Thank you for being such an amazing and genuine friend! Here’s to many more memories including the late night study sesh’s, starbies runs and spending Rakhi’s together 😁`,
-    4: "Happy 22nd Birthday Arohi!!! i’m so happy and grateful to have met you and spent the 4 years of college calling you a friend. I hope we always stay like this and yap about life and drama and our expert opinions on others people’s drama specifically😂😂i love you and i hope you have the best birthday🫶🫶",
-    5: "A very happy bday Arohi!! 🍻 Dude, can you believe it?! 12 yrs! We've been friends for 12 yrs yaar!! Omg! Thank you for sticking with me all this time, inspite of... well, my lack of responses. I know I have said this before, but to me, you are one of the most wonderful and amazing people out there. Hoping I'll be there for more highs and lows that are to come in whatever your future holds. Have a good one 👍🥳",
+    4: `Happy 22nd Birthday Arohi!!! i’m so happy and grateful to have met you and spent the 4 years of college calling you a friend.
+        I hope we always stay like this and yap about life and drama and our expert opinions on others people’s drama specifically😂😂i love you and i hope you have the best birthday🫶🫶`,
+    5: `A very happy bday Arohi!! 🍻 Dude, can you believe it?! 12 yrs! We've been friends for 12 yrs yaar!! Omg! Thank you for sticking with me all this time, inspite of... well, my lack of responses.
+        I know I have said this before, but to me, you are one of the most wonderful and amazing people out there. Hoping I'll be there for more highs and lows that are to come in whatever your future holds.
+        Have a good one 👍🥳`,
     6: `Hey buddhi 
         Here’s everything from the dil 
         I’m so proud of everything you’ve done and keep doing 
@@ -49,13 +52,15 @@ const messages = {
         I can’t wait to see you again this summers 
         Love G❤`,
     7: `Forever grateful to have you as my best friend. Love you more than words could ever describe♥️♥️`,
-    8: "Hiii Arohi, happy happy 22nd🫶 I love you so so much and I’ll miss you immensely after we graduate, but please know that I’m so grateful to have you in my life and call you my best friend. I hope you find all the joy and fulfillment that you seek in life🥰 wanna get our favorite yogurt and take a stroll on campus and yap?🤪",
+    8: `Hiii Arohi, happy happy 22nd🫶
+        I love you so so much and I’ll miss you immensely after we graduate, but please know that I’m so grateful to have you in my life and call you my best friend. 
+        I hope you find all the joy and fulfillment that you seek in life🥰 wanna get our favorite yogurt and take a stroll on campus and yap?🤪`,
     9: "You’re so sassy and sometimes annoying but I love you",
     10: "the first proper outing picture. an ode to all the successful and unsuccessful hangout plans thereafter🤭 you’re beautiful, I hope you always remember that❤️",
-    11: "I will always have the fondest memories of us letting go of our exterior worries for a few hours, touching grass and enjoying the simplest of pleasures!"
-    12: "My fav person to go to the beach with even when the beach hates us. Love you 💛!"
-    13: "Happy birthdayyy Arohi!! Apologies for the crazy picture lol. Have the best one❤️so glad we mettt🫶🏻"
-    14: ""
+    11: "I will always have the fondest memories of us letting go of our exterior worries for a few hours, touching grass and enjoying the simplest of pleasures!",
+    12: "My fav person to go to the beach with even when the beach hates us. Love you 💛!",
+    13: "Happy birthdayyy Arohi!! Apologies for the crazy picture lol. Have the best one❤️so glad we mettt🫶🏻",
+    14: "",
     15: ""
 };
 
