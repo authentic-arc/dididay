@@ -7,7 +7,7 @@ const titles = {
     3: "Atmik",
     4: "Dia",
     5: "Prakul",
-    6: "Guchum",
+    6: "Ramit",
     7: "Manasha",
     8: "Shanthi",
     9: "Raj",
